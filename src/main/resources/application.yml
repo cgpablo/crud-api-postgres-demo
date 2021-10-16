@@ -1,0 +1,19 @@
+spring:
+   jpa:
+      database: POSTGRESQL
+      show-sql: true
+      hibernate:
+         ddl-auto: create-drop
+         dialect: org.hibernate.dialect.PostgreSQLDialect
+         format_sql: true
+   datasource:
+      platform: postgres
+      jdbc-url: jdbc:postgresql://localhost:5432/demodb2
+      username: postgres
+      password: password
+      pool-size: 30
+      driverClassName: org.postgresql.Driver
+server:
+   error:
+      include-message: always
+
